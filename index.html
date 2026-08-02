@@ -1390,7 +1390,7 @@ function save(key, val) { try { localStorage.setItem(key, JSON.stringify(val)); 
 const sections = [];
 quizData.forEach(q => { if (!sections.includes(q.section)) sections.push(q.section); });
 function shortLabel(name) {
-    const map = {};
+    const map = {"Common Childhood Musculoskeletal Conditions":"Childhood MSK Conditions","Immune-mediated Connective Tissue and Multi-system Disorders":"Connective Tissue Disorders","Selected Topics in Pediatric Rheumatology":"Pediatric Rheumatology"};
     return map[name] || name;
 }
 window.__bbShortLabel = shortLabel;
